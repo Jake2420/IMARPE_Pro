@@ -7,7 +7,7 @@ from PyPDF2 import PdfReader
 from langchain_community.vectorstores import Chroma  # Nuevo import
 from langchain_openai.embeddings import OpenAIEmbeddings  # Nuevo import
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.chains import ConversationalRetrievalChain  # Nuevo import
+from langchain.chains import ConversationalRetrievalChain # Nuevo import
 from langchain_community.chat_models import ChatOpenAI  # Nuevo import
 from langchain.schema import Document
 import streamlit as st
