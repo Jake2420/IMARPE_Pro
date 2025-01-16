@@ -15,6 +15,12 @@ import streamlit as st
 import pdfplumber
 import time
 
+#SQLlite
+try:
+    from pysqlite3 import dbapi2 as sqlite3
+except ImportError:
+    import sqlite3
+
 # Configuración de logging
 logging.basicConfig(
     filename="debug.log",
