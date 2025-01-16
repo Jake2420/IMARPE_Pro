@@ -4,12 +4,11 @@ import logging
 import psutil
 import pandas as pd
 from PyPDF2 import PdfReader
-from langchain.vectorstores import Chroma
-from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain_community.vectorstores import Chroma  # Nuevo import
+from langchain_openai.embeddings import OpenAIEmbeddings  # Nuevo import
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.chains import ConversationalRetrievalChain
-from streamlit_chat import message
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chains import ConversationalRetrievalChain  # Nuevo import
+from langchain_community.chat_models import ChatOpenAI  # Nuevo import
 from langchain.schema import Document
 import streamlit as st
 import pdfplumber
